@@ -1,0 +1,51 @@
+// write a program to calculate addition,sub,multi and div by defining the func seperately in same class by using the concept of class and object
+#include<iostream>
+using namespace std;
+class cal
+{
+	private:
+		float a,b,sum,sub,multi,div;
+	public:
+		void input();
+		void add();
+		void subtraction();
+		void multiplication();
+		void division();
+		
+}obj;
+
+void cal::input()
+{
+	cout<<"Enter a:";
+	cin>>a;
+	cout<<"Enter b:";
+	cin>>b;
+}
+void cal::add()
+{
+	sum=a+b;
+	cout<<"Sum of "<<a<<" and "<<b<<" ="<<sum<<"\n";
+}
+void cal::subtraction()
+{
+    sub=a-b;
+   	cout<<"Subtraction of "<<a<<" and "<<b<<" ="<<sub<<"\n";
+}
+void cal::multiplication()
+{
+	multi=a*b;
+	cout<<"Multiplication of "<<a<<" and "<<b<<" ="<<multi<<"\n";
+}
+void cal::division()
+{
+	div=a/b;
+	cout<<"Division of "<<a<<" and "<<b<<" ="<<div<<"\n";
+}
+int main()
+{
+	obj.input();
+	obj.add();
+	obj.subtraction();
+	obj.multiplication();
+	obj.division();
+}
