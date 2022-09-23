@@ -1,0 +1,44 @@
+// write a prog to calculate circumference and area of circle by using constructor
+#include<iostream>
+using namespace std;
+class cal
+{
+	private:
+		float r,ar,cir,pie;
+	public:
+		cal();
+		~cal();
+	    void input();
+	    void calcir();
+	    void calar();
+}obj;
+cal::cal()
+{
+	pie=3.14;
+}
+cal::~cal()
+{
+	cout<<"I am destroyed";
+}
+void cal::input()
+{
+	cout<<"Enter radius  of your choice: \n";
+	cin>>r;
+}
+void cal::calcir()
+{
+	cir=2*pie*r;
+	cout<<"Circumference of circle is = "<<cir<<"\n";
+}
+void cal::calar()
+{
+	ar=pie*r*r;
+	cout<<"Area of circle is = "<<ar<<"\n";
+}
+int main()
+{
+	obj.input();
+	obj.calcir();
+	obj.calar();
+	return(0);
+}
